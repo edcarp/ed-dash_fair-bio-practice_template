@@ -1,0 +1,518 @@
+---
+layout: workshop      # DON'T CHANGE THIS.
+title: Ed-DaSH FAIR bio practice
+# More detailed instructions (including how to fill these variables for an
+# online workshop) are available at
+# https://carpentries.github.io/workshop-template/customization/index.html
+venue: "University of Edinburgh"        # brief name of the institution that hosts the workshop without address (e.g., "Euphoric State University")
+address: "online"      # full street address of workshop (e.g., "Room A, 123 Forth Street, Blimingen, Euphoria"), videoconferencing URL, or 'online'
+country: "gb"      # lowercase two-letter ISO country code such as "fr" (see https://en.wikipedia.org/wiki/ISO_3166-1#Current_codes) for the institution that hosts the workshop
+language: "en"     # lowercase two-letter ISO language code such as "fr" (see https://en.wikipedia.org/wiki/List_of_ISO_639-1_codes) for the
+latitude: "55.96327"        # decimal latitude of workshop venue (use https://www.latlong.net/)
+longitude: "-3.23222"       # decimal longitude of the workshop venue (use https://www.latlong.net)
+humandate: "19 - 22 October 2021"    # human-readable dates for the workshop (e.g., "Feb 17-18, 2020")
+humantime: "13:00 - 17:00"    # human-readable times for the workshop (e.g., "9:00 am - 4:30 pm")
+startdate: 2021-10-19      # machine-readable start date for the workshop in YYYY-MM-DD format like 2015-01-01
+enddate: 2021-10-22        # machine-readable end date for the workshop in YYYY-MM-DD format like 2015-01-02
+instructor: ["Tomasz Zielinski", "Andrés Romanowski"] # boxed, comma-separated list of instructors' names as strings, like ["Kay McNulty", "Betty Jennings", "Betty Snyder"]
+helper: ["Tomasz Zielinski", "Andrés Romanowski", "Ines Boehm", "Ben Thomas", "Livia Scorza"]     # boxed, comma-separated list of helpers' names, like ["Marlyn Wescoff", "Fran Bilas", "Ruth Lichterman"]
+email: ["bio_rdm@ed.ac.uk"]    # boxed, comma-separated list of contact email addresses for the host, lead instructor, or whoever else is handling questions, like ["marlyn.wescoff@example.org", "fran.bilas@example.org", "ruth.lichterman@example.org"]
+collaborative_notes: https://pad.carpentries.org/2021-10-19_ed-dash_fair-bio-practice # optional: URL for the workshop collaborative notes, e.g. an Etherpad or Google Docs document (e.g., https://pad.carpentries.org/2015-01-01-euphoria)
+eventbrite:           # optional: alphanumeric key for Eventbrite registration, e.g., "1234567890AB" (if Eventbrite is being used)
+---
+
+{% comment %} See instructions in the comments below for how to edit specific sections of this workshop template. {% endcomment %}
+
+{% comment %}
+HEADER
+
+Edit the values in the block above to be appropriate for your workshop.
+If the value is not 'true', 'false', 'null', or a number, please use
+double quotation marks around the value, unless specified otherwise.
+And run 'make workshop-check' *before* committing to make sure that changes are good.
+{% endcomment %}
+
+
+{% comment %}
+8< ============= For a workshop delete from here =============
+For a workshop please delete the following block until the next dashed-line
+{% endcomment %}
+
+
+
+
+{% comment %}
+8< ============================= until here ==================
+{% endcomment %}
+
+
+{% comment %}
+Check DC curriculum
+{% endcomment %}
+
+{% comment %}
+Check SWC curriculum
+{% endcomment %}
+
+
+
+{% comment %}
+EVENTBRITE
+
+This block includes the Eventbrite registration widget if
+'eventbrite' has been set in the header.  You can delete it if you
+are not using Eventbrite, or leave it in, since it will not be
+displayed if the 'eventbrite' field in the header is not set.
+
+{% endcomment %}
+
+{% if page.eventbrite %}
+<strong>Some adblockers block the registration window. If you do not see the
+  registration box below, please check your adblocker settings.</strong>
+<iframe
+  src="https://www.eventbrite.com/tickets-external?eid={{page.eventbrite}}&ref=etckt"
+  frameborder="0"
+  width="100%"
+  height="280px"
+  scrolling="auto">
+</iframe>
+{% endif %}
+
+{% comment %}
+
+INTRODUCTION
+
+Edit the general explanatory paragraph below if you want to change
+the pitch.
+{% endcomment %}
+{% if site.carpentry == "swc" %}
+{% include swc/intro.html %}
+{% elsif site.carpentry == "dc" %}
+{% include dc/intro.html %}
+{% elsif site.carpentry == "lc" %}
+{% include lc/intro.html %}
+{% endif %}
+
+<h2 id="general"> Overview </h2>
+
+**FAIR in (Biological) Practice**
+
+Open Science is disruptive. It will change how we do reasearch and how society benefits from it. Making data re-usable is key to this, and FAIR principles are a way to achieve it.
+
+* But what does it mean in practice?
+* How can a biologist incorporate those principles in their workflow?
+* We will learn that becoming FAIR and following OS practices is a process.
+
+We will teach you how planning and using the correct set of tools you can make your outputs ready for public sharing and reuse. 
+
+This hands-on 4 half-day sessions workshop covers the basics of Open Science and FAIR practices,
+and looks at how to use these ideas in your own projects. The workshop is a mix of lectures
+and hands-on lessons where you will use the approaches learned and implement some of the discussed practices. 
+
+The course is aimed at active researchers in biomedicine science (PhD students, postdocs, technicians, young PIs etc.) who are interested in Open Science, FAIR (*Findable, Accessible, Interoperable and Reusable*) principles and data management. This training is aimed at those who want to be familiar with these concepts and apply them throughout their project’s life cycle. The course is covered in four half days.
+
+**Ed-DaSH**
+
+Ed-DaSH is a **Da**ta **S**cience training programme for **H**ealth and Biosciences. The [team](https://edcarp.github.io/Ed-DaSH/ed_dash_team.html) has developed workshops using [The Carpentries](https://carpentries.org/) platform on the following topics. See [workshops](https://edcarp.github.io/Ed-DaSH/workshops.html) for dates and registration details. All workshops will be delivered remotely.
+
+<h2 id="general">General Information</h2>
+
+<strong>Registration:</strong> [Online](https://www.epay.ed.ac.uk/conferences-and-events/college-of-medicine-and-veterinary-medicine/school-of-molecular-genetic-and-population-health-sciences/igmm/fair-in-biological-practice)  
+The course is free but there is a 50 pounds holding deposit refunded after attending the workshop.
+
+{% comment %}
+
+AUDIENCE
+
+Explain who your audience is.  (In particular, tell readers if the
+workshop is only open to people from a particular institution.
+
+{% endcomment %}
+
+{% if site.carpentry == "swc" %}
+{% include swc/who.html %}
+{% elsif site.carpentry == "dc" %}
+{% include dc/who.html %}
+{% elsif site.carpentry == "lc" %}
+{% include lc/who.html %}
+{% endif %}
+
+{% comment %}
+LOCATION
+
+This block displays the address and links to maps showing directions
+if the latitude and longitude of the workshop have been set.  You
+can use https://itouchmap.com/latlong.html to find the lat/long of an
+address.
+{% endcomment %}
+
+{% assign begin_address = page.address | slice: 0, 4 | downcase  %}
+{% if page.address == "online" %}
+{% assign online = "true_private" %}
+{% elsif begin_address contains "http" %}
+{% assign online = "true_public" %}
+{% else %}
+{% assign online = "false" %}
+{% endif %}
+
+{% if page.latitude and page.longitude and online == "false" %}
+<p id="where">
+  <strong>Where:</strong>
+  {{page.address}}
+  Get directions with
+  <a href="//www.openstreetmap.org/?mlat={{page.latitude}}&mlon={{page.longitude}}&zoom=16">OpenStreetMap</a>
+  or
+  <a href="//maps.google.com/maps?q={{page.latitude}},{{page.longitude}}">Google Maps</a>.
+</p>
+{% elsif online == "true_public" %}
+<p id="where">
+  <strong>Where:</strong>
+  online at <a href="{{page.address}}">{{page.address}}</a>.
+  If you need a password or other information to access the training,
+  the instructor will pass it on to you before the workshop.
+</p>
+{% elsif online == "true_private" %}
+<p id="where">
+  <strong>Where:</strong> This training will take place online.
+  The instructors will provide you with the information you will need to connect to this meeting.
+</p>
+{% endif %}
+
+{% comment %}
+
+DATE
+
+This block displays the date and links to Google Calendar.
+
+{% endcomment %}
+
+{% if page.humandate %}
+<p id="when">
+  <strong>When:</strong>
+  {{page.humandate}}.
+  {% include workshop_calendar.html %}
+</p>
+{% endif %}
+
+{% comment %}
+
+SPECIAL REQUIREMENTS
+
+Modify the block below if there are any special requirements.
+
+{% endcomment %}
+
+<p id="requirements">
+  <strong>Requirements:</strong>
+  {% if online == "false" %}
+    Participants must bring a laptop with a
+    Mac, Linux, or Windows operating system (not a tablet, Chromebook, etc.).
+  {% else %}
+    Participants must have access to a computer with a
+    Mac, Linux, or Windows operating system (not a tablet, Chromebook, etc.).
+  {% endif %}
+</p>
+
+{% comment %}
+
+ACCESSIBILITY
+
+Modify the block below if there are any barriers to accessibility or
+special instructions.
+
+{% endcomment %}
+
+<p id="accessibility">
+  <strong>Accessibility:</strong>
+{% if online == "false" %}
+  We are committed to making this workshop
+  accessible to everybody. The workshop organizers have checked that:
+</p>
+<ul>
+  <li>The room is wheelchair / scooter accessible.</li>
+  <li>Accessible restrooms are available.</li>
+</ul>
+<p>
+  Materials will be provided in advance of the workshop and
+  large-print handouts are available if needed by notifying the
+  organizers in advance.  If we can help making learning easier for
+  you (e.g. sign-language interpreters, lactation facilities) please
+  get in touch (using contact details below) and we will
+  attempt to provide them.
+</p>
+{% else %}
+  We are dedicated to providing a positive and accessible learning environment for all. Please
+  notify the instructors in advance of the workshop if you require any accommodations or if there is
+  anything we can do to make this workshop more accessible to you.
+</p>
+{% endif %}
+
+{% comment %}
+
+CONTACT EMAIL ADDRESS
+
+Display the contact email address set in the configuration file.
+
+{% endcomment %}
+
+<p id="contact">
+  <strong>Contact:</strong>
+  Please email
+  {% if page.email %}
+  {% for email in page.email %}
+  {% if forloop.last and page.email.size > 1 %}
+  or
+  {% else %}
+  {% unless forloop.first %}
+  ,
+  {% endunless %}
+  {% endif %}
+  <a href='mailto:{{email}}'>{{email}}</a>
+  {% endfor %}
+  {% else %}
+  to-be-announced
+  {% endif %}
+  for more information.
+</p>
+
+<p id="roles">
+  <strong>Roles:</strong>
+  To learn more about the roles at the workshop (who will be doing what),
+  refer to <a href="https://carpentries.org/workshop_faq/#what-are-the-roles-of-everyone-participating-in-a-workshop">our Workshop FAQ</a>.
+</p>
+
+{% comment %}
+
+WHO CAN ATTEND?
+
+If you would like to specify who can attend the workshop,
+you can use the section below.
+
+Move the 'endcomment' tag above the beginning of the following
+<p> tag to make this section visible.
+
+Edit the text to match who can attend the workshop. For instance:
+- This workshop is open to affiliates to ABC university.
+- This workshop is open to the public.
+- If you are interested in attending this workshop, contact me@example.com
+  for more information
+
+<p id="who-can-attend">
+    <strong>Who can attend?:</strong>
+    This workshop is open to ....
+</p>
+
+{% endcomment %}
+
+<hr/>
+
+{% comment%}
+
+CODE OF CONDUCT
+
+{% endcomment %}
+
+<h2 id="code-of-conduct">Code of Conduct</h2>
+
+<p>
+Everyone who participates in Carpentries activities is required to conform to the <a href="https://docs.carpentries.org/topic_folders/policies/code-of-conduct.html">Code of Conduct</a>. This document also outlines how to report an incident if needed.
+</p>
+
+<p class="text-center">
+  <a href="https://goo.gl/forms/KoUfO53Za3apOuOK2">
+    <button type="button" class="btn btn-info">Report a Code of Conduct Incident</button>
+  </a>
+</p>
+<hr/>
+
+
+{% comment %}
+
+Collaborative Notes
+
+If you want to use an Etherpad, go to
+
+https://pad.carpentries.org/YYYY-MM-DD-site
+
+where 'YYYY-MM-DD-site' is the identifier for your workshop,
+e.g., '2015-06-10-esu'.
+
+Note we also have a CodiMD (the open-source version of HackMD)
+available at https://codimd.carpentries.org
+
+{% endcomment %}
+
+{% if page.collaborative_notes %}
+<h2 id="collaborative_notes">Collaborative Notes</h2>
+
+<p>
+We will use this <a href="{{ page.collaborative_notes }}">collaborative document</a> for chatting, taking notes, and sharing URLs and bits of code.
+</p>
+<hr/>
+{% endif %}
+
+
+{% comment %}
+
+SURVEYS - DO NOT EDIT SURVEY LINKS
+
+{% endcomment %}
+<!-- no surveys yet
+<h2 id="surveys">Surveys</h2>
+<p>Please be sure to complete these surveys before and after the workshop.</p>
+{% if site.carpentry == "pilot" %}
+<p><a href="{{ site.pilot_pre_survey }}">Pre-workshop Survey</a></p>
+<p><a href="{{ site.pilot_post_survey }}">Post-workshop Survey</a></p>
+{% elsif site.pilot_pre_survey or site.pilot_post_survey %}
+<div class="alert alert-danger">
+WARNING: you have defined custom pre- and/or post-survey links for
+a workshop not configured as a lesson pilot
+(the value of `site` is not set to `pilot` in `_config.yml`).
+Please comment out the `pilot_pre_survey` and `pilot_post_survey` fields
+in `_config.yml` or, if this workshop is a lesson pilot,
+change the value of `carpentry` to `pilot`.
+</div>
+{% else %}
+<p><a href="{{ site.pre_survey }}{{ site.github.project_title }}">Pre-workshop Survey</a></p>
+<p><a href="{{ site.post_survey }}{{ site.github.project_title }}">Post-workshop Survey</a></p>
+{% endif %}
+
+<hr/>
+no surveys yet -->
+
+{% comment %}
+
+SCHEDULE
+
+Show the workshop's schedule.
+
+Small changes to the schedule can be made by modifying the
+`schedule.html` found in the `_includes` folder for your
+workshop type (`swc`, `lc`, or `dc`). Edit the items and
+times in the table to match your plans. You may also want to
+change 'Day 1' and 'Day 2' to be actual dates or days of the
+week.
+
+For larger changes, a blank template for a 4-day workshop
+(useful for online teaching for instance) can be found in
+`_includes/custom-schedule.html`. Add the times, and what
+you will be teaching to this file. You may also want to add
+rows to the table if you wish to break down the schedule
+further. To use this custom schedule here, replace the block
+of code below the Schedule `<h2>` header below with
+`{% include custom-schedule.html %}`.
+
+{% endcomment %}
+
+<h2 id="schedule">Schedule</h2>
+
+{% if site.carpentry == "swc" %}
+{% include swc/schedule.html %}
+
+{% elsif site.carpentry == "dc" %}
+{% include dc/schedule.html %}
+
+{% elsif site.carpentry == "lc" %}
+{% include lc/schedule.html %}
+
+{% elsif site.carpentry == "pilot" %}
+
+The lesson taught in this workshop is being piloted and a precise schedule is yet to be established. 
+
+{% include custom-schedule.html %}
+
+{% comment %}
+Edit/replace the text above if you want to include a schedule table.
+See the contents of the _includes/custom-schedule.html file for an example of
+how one of these schedule tables is constructed.
+
+{% endcomment %}
+
+{% else %}
+{% include custom-schedule.html %}
+
+{% endif %}
+
+<hr/>
+
+
+{% comment %}
+
+SETUP
+
+Delete irrelevant sections from the setup instructions.  Each
+section is inside a 'div' without any classes to make the beginning
+and end easier to find.
+
+This is the other place where people frequently make mistakes, so
+please preview your site before committing, and make sure to run
+'tools/check' as well.
+
+{% endcomment %}
+
+<h2 id="setup">Setup</h2>
+
+<p>
+  To participate in a
+  {% if site.carpentry == "swc" %}
+  Software Carpentry
+  
+  {% elsif site.carpentry == "dc" %}
+  Data Carpentry
+  
+  {% elsif site.carpentry == "lc" %}
+  Library Carpentry
+  
+  {% endif %}
+  
+  workshop,
+  you will need access to software as described below.
+  In addition, you will need an up-to-date web browser.
+</p>
+<p>
+  We maintain a list of common issues that occur during installation as a reference for instructors
+  that may be useful on the
+  <a href = "{{site.swc_github}}/workshop-template/wiki/Configuration-Problems-and-Solutions">Configuration Problems and Solutions wiki page</a>.
+</p>
+
+{% comment %}
+
+For online workshops, the section below provides:
+- installation instructions for the Zoom client
+- recommendations for setting up Learners' workspace so they can follow along
+  the instructions and the videoconferencing
+
+If you do not use Zoom for your online workshop, edit the file
+`_includes/install_instructions/videoconferencing.html`
+to include the relevant installation instrucctions.
+
+{% endcomment %}
+
+{% if online != "false" %}
+{% include install_instructions/videoconferencing.html %}
+{% endif %}
+
+{% comment %}
+
+These are the installation instructions for the tools used
+during the workshop.
+
+{% endcomment %}
+
+{% if site.carpentry == "swc" %}
+{% include swc/setup.html %}
+
+{% elsif site.carpentry == "dc" %}
+{% include dc/setup.html %}
+
+{% elsif site.carpentry == "lc" %}
+{% include lc/setup.html %}
+
+{% elsif site.carpentry == "pilot" %}
+
+<!-- we dont need setup
+Please check the "Setup" page of
+[the lesson site]({{ site.lesson_site }}) for instructions to follow
+to obtain the software and data you will need to follow the lesson.
+-->
+{% endif %}
