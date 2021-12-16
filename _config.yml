@@ -79,7 +79,7 @@ repository: edcarp/Ed-DaSH # <USERNAME>/<PROJECT>
 # Email address, no mailto:
 # (Don't change this -- the contact address for your workshop will be set
 # in the index.md file)
-email: "bio_rdm@ed.ac.uk"
+email: "Sharon.McDonald@ed.ac.uk"
 
 # Sites.
 amy_site: "https://amy.carpentries.org/"
