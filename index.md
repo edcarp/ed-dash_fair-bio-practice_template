@@ -358,9 +358,9 @@ SURVEYS - DO NOT EDIT SURVEY LINKS
 
 {% endcomment %}
 <h2 id="surveys">Surveys</h2>
-<p>Please be sure to complete the survey after the workshop.</p>
+<p>Please be sure to complete the workshop survey (can be completed before you attend).</p>
 {% if site.carpentry == "pilot" %}
-<p><a href="{{ site.pilot_post_survey }}">Post-workshop Survey</a></p>
+<p><a href="{{ site.pilot_post_survey }}">Ed-DaSH Survey</a></p>
 {% elsif site.pilot_pre_survey or site.pilot_post_survey %}
 <div class="alert alert-danger">
 WARNING: you have defined custom pre- and/or post-survey links for
