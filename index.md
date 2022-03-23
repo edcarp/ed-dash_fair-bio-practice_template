@@ -102,6 +102,7 @@ Open Science is disruptive. It will change how we do reasearch and how society b
 * But what does it mean in practice?
 * How can a biologist incorporate those principles in their workflow?
 * We will learn that becoming FAIR and following OS practices is a process.
+* We will learn how to work more efficient with the data
 
 We will teach you how planning and using the correct set of tools you can make your outputs ready for public sharing and reuse. 
 
@@ -109,7 +110,7 @@ This hands-on 4 half-day sessions workshop covers the basics of Open Science and
 and looks at how to use these ideas in your own projects. The workshop is a mix of lectures
 and hands-on lessons where you will use the approaches learned and implement some of the discussed practices. 
 
-The course is aimed at active researchers in biomedicine science (PhD students, postdocs, technicians, young PIs etc.) who are interested in Open Science, FAIR (*Findable, Accessible, Interoperable and Reusable*) principles and data management. This training is aimed at those who want to be familiar with these concepts and apply them throughout their project’s life cycle. The course is covered in four half days.
+The course is aimed at active researchers in biomedicine science (PhD students, postdocs, technicians, young PIs etc.) who are interested in Open Science, FAIR (*Findable, Accessible, Interoperable and Reusable*) principles and efficient data management. This training is aimed at those who want to be familiar with these concepts and apply them throughout their project’s life cycle. The course is covered in four half days.
 
 **Ed-DaSH**
 
@@ -209,7 +210,8 @@ Modify the block below if there are any special requirements.
     Mac, Linux, or Windows operating system (not a tablet, Chromebook, etc.).
   {% else %}
     Participants must have access to a computer with a
-    Mac, Linux, or Windows operating system (not a tablet, Chromebook, etc.).
+    Mac, Linux, or Windows operating system (not a tablet, Chromebook, etc.).<br>
+  Paticipaints must create accounts in <a href="https://www.protocols.io">Protocols.io</a> and <a href="https://www.benchling.com">Benchling</a>,
   {% endif %}
 </p>
 
